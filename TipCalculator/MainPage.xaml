@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TipCalculator.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+
+            <Label Text="Conta"/>
+            
+            <Entry 
+                x:Name="AmountEntry"
+                Placeholder="Digite o valor"/>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="160">
+                <Label
+                    Text="Tip"/>
+                <Label
+                     Text="0.00"
+                    x:Name="TipLabel"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="160">
+                <Label
+                    Text="Total"/>
+                <Label
+                     Text="0.00"
+                    x:Name="TotalLabel"/>
+            </HorizontalStackLayout>
+
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="120">
+                <Label
+                    Text="Porcentual"/>
+                <Label
+                    Text="10%"
+                    x:Name="PercentLabel"/>
+            </HorizontalStackLayout>
+
+            <Slider
+                Maximum="50"
+                Minimum="0"
+                />
+
+            <Button 
+                Text="15%"
+                x:Name="SetUpTipButtom"
+                Clicked="SetUpTipButtom_Clicked"/>
+            
+            <Button 
+                Text="20%"
+                x:Name="SetDownTipButtom"
+                Clicked="SetDownTipButtom_Clicked"/>
+            
+            <Button 
+                Text="Arredondar para mais"
+                x:Name="RoundUpButtom"
+                Clicked="RoundUpButtom_Clicked"/>
+            
+            <Button 
+                Text="Arredondar para menos"
+                x:Name="RoundDownButtom"
+                Clicked="RoundDownButtom_Clicked"/>
+
+
+        </VerticalStackLayout>
+
+
+    </ScrollView>
+
+</ContentPage>
