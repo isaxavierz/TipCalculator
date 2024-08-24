@@ -4,15 +4,20 @@
              x:Class="TipCalculator.MainPage">
 
     <ScrollView>
-        <VerticalStackLayout>
-
-            <Label Text="Conta"/>
+        <VerticalStackLayout Spacing="25">
             
-            <Entry 
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand" Spacing="50" >
+                
+                <Label Text="Conta"/>
+            
+                <Entry 
                 x:Name="AmountEntry"
-                Placeholder="Digite o valor"/>
+                Placeholder="Digite o valor"
+                WidthRequest="300"/>
+                
+            </HorizontalStackLayout>
 
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="160">
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="340">
                 <Label
                     Text="Tip"/>
                 <Label
@@ -20,7 +25,7 @@
                     x:Name="TipLabel"/>
             </HorizontalStackLayout>
 
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="160">
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="330">
                 <Label
                     Text="Total"/>
                 <Label
@@ -28,7 +33,7 @@
                     x:Name="TotalLabel"/>
             </HorizontalStackLayout>
 
-            <HorizontalStackLayout HorizontalOptions="Center" Spacing="120">
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="295">
                 <Label
                     Text="Porcentual"/>
                 <Label
@@ -39,6 +44,7 @@
             <Slider
                 Maximum="50"
                 Minimum="0"
+                WidthRequest="600"
                 />
 
             <Button 
