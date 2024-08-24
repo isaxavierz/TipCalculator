@@ -13,8 +13,12 @@
                 <Entry 
                 x:Name="AmountEntry"
                 Placeholder="Digite o valor"
+<<<<<<< HEAD
                 WidthRequest="300"
                 TextChanged="AmountEntry_TextChanged"/>
+=======
+                WidthRequest="300"/>
+>>>>>>> c2e7203ca1e922332d30025ec9b85681943771e8
                 
             </HorizontalStackLayout>
 
@@ -46,8 +50,11 @@
                 Maximum="50"
                 Minimum="0"
                 WidthRequest="600"
+<<<<<<< HEAD
                 x:Name="TipSlider"
                 ValueChanged="TipSlider_ValueChanged"
+=======
+>>>>>>> c2e7203ca1e922332d30025ec9b85681943771e8
                 />
 
             <Button 
